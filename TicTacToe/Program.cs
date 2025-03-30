@@ -26,6 +26,8 @@ class Program
             if (game.checkWin())
             {
                 Console.WriteLine($"Winner is Player {game.turn}! Congrats.");
+                Console.ReadKey();
+
                 break;
             }
             game.switchTurn();
