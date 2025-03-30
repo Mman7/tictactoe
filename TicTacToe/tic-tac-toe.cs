@@ -1,5 +1,3 @@
-//TODO implement win condition
-
 namespace Game
 {
     public class TicTacToe
@@ -59,22 +57,21 @@ namespace Game
         {
             if (gameRound < 3)
                 return false;
-            //TODO finish this
             if (allSame(gridList[0], gridList[1], gridList[2]))
                 return true;
-            if (allSame(gridList[0], gridList[1], gridList[2]))
+            if (allSame(gridList[3], gridList[4], gridList[5]))
                 return true;
-            if (allSame(gridList[0], gridList[1], gridList[2]))
+            if (allSame(gridList[6], gridList[7], gridList[8]))
                 return true;
-            if (allSame(gridList[0], gridList[1], gridList[2]))
+            if (allSame(gridList[0], gridList[3], gridList[6]))
                 return true;
-            if (allSame(gridList[0], gridList[1], gridList[2]))
+            if (allSame(gridList[1], gridList[4], gridList[7]))
                 return true;
-            if (allSame(gridList[0], gridList[1], gridList[2]))
+            if (allSame(gridList[2], gridList[5], gridList[8]))
                 return true;
-            if (allSame(gridList[0], gridList[1], gridList[2]))
+            if (allSame(gridList[0], gridList[4], gridList[8]))
                 return true;
-            if (allSame(gridList[0], gridList[1], gridList[2]))
+            if (allSame(gridList[2], gridList[4], gridList[6]))
                 return true;
 
             return false;

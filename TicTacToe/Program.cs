@@ -25,7 +25,7 @@ class Program
             game.renderTemplete();
             if (game.checkWin())
             {
-                Console.WriteLine("check win mF");
+                Console.WriteLine($"Winner is Player {game.turn}! Congrats.");
                 break;
             }
             game.switchTurn();
@@ -36,7 +36,6 @@ class Program
     ///  [input] is not number or bigger than 8 return true
     /// </summary>
     /// <param name="input"></param>
-    /// <returns></returns>
     static bool checkInput(ConsoleKeyInfo input)
     {
         return !int.TryParse(input.KeyChar.ToString(), out int result)
