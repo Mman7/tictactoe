@@ -46,7 +46,7 @@ namespace Game
 
         ///---------------------------------------------
 
-        string renderShape(Grid grid, int idx)
+        private string renderShape(Grid grid, int idx)
         {
             if (grid.Shape == GridShape.empty)
                 return $"{idx}";
@@ -77,7 +77,7 @@ namespace Game
             return false;
         }
 
-        bool allSame(Grid item1, Grid item2, Grid item3)
+        private bool allSame(Grid item1, Grid item2, Grid item3)
         {
             if (new[] { item1.Shape, item2.Shape, item3.Shape }.All(x => x == GridShape.empty))
                 return false;
